@@ -1,21 +1,22 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'character.dart';
+part of 'character_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Character _$CharacterFromJson(Map<String, dynamic> json) => Character(
+CharacterDto _$CharacterDtoFromJson(Map<String, dynamic> json) => CharacterDto(
       info: json['info'] == null
           ? null
-          : Info.fromJson(json['info'] as Map<String, dynamic>),
+          : InfoDto.fromJson(json['info'] as Map<String, dynamic>),
       results: (json['results'] as List<dynamic>?)
-          ?.map((e) => Results.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => ResultsDto.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
-Map<String, dynamic> _$CharacterToJson(Character instance) => <String, dynamic>{
+Map<String, dynamic> _$CharacterDtoToJson(CharacterDto instance) =>
+    <String, dynamic>{
       'info': instance.info,
       'results': instance.results,
     };

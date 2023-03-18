@@ -1,12 +1,12 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'results.dart';
+part of 'results_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Results _$ResultsFromJson(Map<String, dynamic> json) => Results(
+ResultsDto _$ResultsDtoFromJson(Map<String, dynamic> json) => ResultsDto(
       id: json['id'] as int?,
       name: json['name'] as String?,
       status: json['status'] as String?,
@@ -15,10 +15,10 @@ Results _$ResultsFromJson(Map<String, dynamic> json) => Results(
       gender: json['gender'] as String?,
       origin: json['origin'] == null
           ? null
-          : Origin.fromJson(json['origin'] as Map<String, dynamic>),
+          : OriginDto.fromJson(json['origin'] as Map<String, dynamic>),
       location: json['location'] == null
           ? null
-          : Origin.fromJson(json['location'] as Map<String, dynamic>),
+          : OriginDto.fromJson(json['location'] as Map<String, dynamic>),
       image: json['image'] as String?,
       episode:
           (json['episode'] as List<dynamic>?)?.map((e) => e as String).toList(),
@@ -26,7 +26,8 @@ Results _$ResultsFromJson(Map<String, dynamic> json) => Results(
       created: json['created'] as String?,
     );
 
-Map<String, dynamic> _$ResultsToJson(Results instance) => <String, dynamic>{
+Map<String, dynamic> _$ResultsDtoToJson(ResultsDto instance) =>
+    <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'status': instance.status,

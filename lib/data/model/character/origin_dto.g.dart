@@ -1,17 +1,17 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'origin.dart';
+part of 'origin_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
 // **************************************************************************
 
-Origin _$OriginFromJson(Map<String, dynamic> json) => Origin(
+OriginDto _$OriginDtoFromJson(Map<String, dynamic> json) => OriginDto(
       name: json['name'] as String?,
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$OriginToJson(Origin instance) => <String, dynamic>{
+Map<String, dynamic> _$OriginDtoToJson(OriginDto instance) => <String, dynamic>{
       'name': instance.name,
       'url': instance.url,
     };
