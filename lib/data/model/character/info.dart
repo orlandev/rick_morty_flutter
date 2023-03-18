@@ -1,3 +1,8 @@
+import 'package:json_annotation/json_annotation.dart';
+
+part 'info.g.dart';
+
+@JsonSerializable()
 class Info {
   int? count;
   int? pages;
@@ -6,6 +11,11 @@ class Info {
 
   Info({this.count, this.pages, this.next, this.prev});
 
+  factory Info.fromJson(Map<String, dynamic> json) => _$InfoFromJson(json);
+
+  Map<String, dynamic> toJson() => _$InfoToJson(this);
+
+/*
   Info.fromJson(Map<String, dynamic> json) {
     count = json['count'];
     pages = json['pages'];
@@ -20,5 +30,5 @@ class Info {
     data['next'] = next;
     data['prev'] = prev;
     return data;
-  }
+  }*/
 }

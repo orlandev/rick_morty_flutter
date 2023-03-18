@@ -1,7 +1,10 @@
-
+import 'package:json_annotation/json_annotation.dart';
 
 import 'origin.dart';
 
+part 'results.g.dart';
+
+@JsonSerializable()
 class Results {
   int? id;
   String? name;
@@ -30,7 +33,12 @@ class Results {
       this.url,
       this.created});
 
-  Results.fromJson(Map<String, dynamic> json) {
+  factory Results.fromJson(Map<String, dynamic> json) =>
+      _$ResultsFromJson(json);
+
+  Map<String, dynamic> toJson() => _$ResultsToJson(this);
+
+/*Results.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     status = json['status'];
@@ -65,6 +73,5 @@ class Results {
     data['url'] = url;
     data['created'] = created;
     return data;
-  }
+  }*/
 }
-
