@@ -1,5 +1,5 @@
-import 'Info.dart';
-import 'Results.dart';
+import 'info.dart';
+import 'results.dart';
 
 class Character {
   Info? info;
